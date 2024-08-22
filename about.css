@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 70px; /* Header yüksekliğine eşit olacak şekilde ayarlayın */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    height: 70px; /* Sabit yükseklik */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+#hakkimizda {
+    padding: 60px 0;
+}
+
+#hakkimizda img {
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #f8f9fa;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p, footer a {
+    margin: 0;
+}
+
+.social-icons img {
+    width: 24px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}

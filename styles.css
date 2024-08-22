@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 70px; /* Header yüksekliğine eşit olacak şekilde ayarlayın */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    height: 70px; /* Sabit yükseklik */
+    position: fixed; /* Sabit konum */
+    width: 100%; /* Tam genişlik */
+    top: 0; /* Sayfanın üst kısmında */
+    left: 0; /* Sayfanın sol kısmında */
+    z-index: 1030; /* Bootstrap'ın z-index'inden daha yüksek */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.hero-section {
+    background-image: url('https://st4.depositphotos.com/5653638/39359/i/450/depositphotos_393597946-stock-photo-long-basmati-rice-cooked-form.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blurred-box {
+    background: rgba(255, 255, 255, 0.2); /* Light background with transparency */
+    backdrop-filter: blur(5px); /* Blur effect */
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Border with slight transparency */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow for text readability */
+    max-width: 800px; /* Increase max-width */
+    margin: 0 auto;
+}
+
+.blurred-box h1 {
+    font-size: 3rem; /* Reduced font size */
+    margin-bottom: 20px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.blurred-box p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.blurred-box .btn {
+    margin: 10px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    margin: 10px;
+}
+
+#about img {
+    border-radius: 15px;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #f8f9fa;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p, footer a {
+    margin: 0;
+}
+
+.social-icons img {
+    width: 24px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+.card-img-top {
+    width: 100%; /* Resmin genişliği kartın genişliği kadar olur */
+    height: 200px; /* Tüm resimlerin yüksekliği aynı olur */
+    object-fit: cover; /* Resmin en-boy oranını koruyarak, alanı kaplayacak şekilde kırpılmasını sağlar */
+}
